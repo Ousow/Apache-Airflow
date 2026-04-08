@@ -1,0 +1,9 @@
+logs/
+.env
+.venv
+airflow_env
+__pycache__/
+*.pyc
+config
+plugins
+TP_Jour1_Pipeline_Energie_Meteo_Docker
