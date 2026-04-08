@@ -44,19 +44,19 @@ Par exemple, une heure comme 2h du matin n’existe pas ce jour-là. Si un pipel
 
 Pour éviter ces problèmes, il est important de bien gérer les timezones dans Airflow, d’utiliser des timestamps en UTC en interne, et de convertir les données uniquement au moment de l’affichage ou de l’intégration avec des systèmes locaux.
 
-#  Interface Airflow UI avec le DAG energie_meteo_dag visible et en état 
-![alt text](image-1.png)
+##  Interface Airflow UI avec le DAG energie_meteo_dag visible et en état 
+!(image-1.png)
 
-#  Vue Graph du DAG montrant les 5 tâches et leurs dépendances
-![alt text](image-2.png)
+##  Vue Graph du DAG montrant les 5 tâches et leurs dépendances
+!(image-2.png)
 
-#  Logs d’une exécution réussie de success generer_rapport_energie avec le tableau affiché
-![alt text](image-3.png)
+##  Logs d’une exécution réussie de success generer_rapport_energie avec le tableau affiché
+![(image-3.png)
 
-# Onglet XCom de la tâche analyser_correlation montrant le dictionnaire d’alertes
-![alt text](image-4.png)
+## Onglet XCom de la tâche analyser_correlation montrant le dictionnaire d’alertes
+!(image-4.png)
 
-# Contenu du fichier JSON généré (via docker compose exec ... cat /tmp/rapport_energie_*.json)
+## Contenu du fichier JSON généré (via docker compose exec ... cat /tmp/rapport_energie_*.json)
 ![alt text](image-5.png)
 
 
