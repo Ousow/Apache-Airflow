@@ -1,9 +1,15 @@
+# Airflow
 logs/
+*.log
+airflow-energie/logs/
+
+# Env
 .env
-.venv
-airflow_env
+
+# Python
 __pycache__/
 *.pyc
-config
-plugins
-TP_Jour1_Pipeline_Energie_Meteo_Docker
+
+# Airflow artifacts
+*.sqlite
+*.db
