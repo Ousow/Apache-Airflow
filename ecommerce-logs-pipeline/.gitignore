@@ -1,0 +1,13 @@
+# Airflow
+logs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+
+access_2024-03-15.log
+test_acces.log
+
+
+plugins/
