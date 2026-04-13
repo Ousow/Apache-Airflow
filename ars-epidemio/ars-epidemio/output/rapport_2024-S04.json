@@ -1,0 +1,35 @@
+{
+  "semaine": "2024-S04",
+  "region": "Occitanie",
+  "code_region": "76",
+  "date_generation": "2024-01-29T06:42:00.000Z",
+  "situation_globale": "ALERTE",
+  "nb_syndromes_surveilles": 2,
+  "syndromes_en_urgence": [],
+  "syndromes_en_alerte": ["GRIPPE"],
+  "indicateurs": [
+    {
+      "syndrome": "GRIPPE",
+      "valeur_ias": 124.7,
+      "z_score": 1.87,
+      "r0_estime": 1.23,
+      "statut": "ALERTE",
+      "nb_saisons_reference": 5
+    },
+    {
+      "syndrome": "GEA",
+      "valeur_ias": 54.2,
+      "z_score": 0.91,
+      "r0_estime": 1.04,
+      "statut": "NORMAL",
+      "nb_saisons_reference": 5
+    }
+  ],
+  "recommandations": [
+    "Surveillance renforcée des indicateurs pour les 48h suivantes",
+    "Envoi d'un bulletin de surveillance aux partenaires de santé",
+    "Vérification des capacités d'accueil des services d'urgences"
+  ],
+  "genere_par": "ars_epidemio_dag v1.0",
+  "pipeline_version": "2.8"
+}
