@@ -33,7 +33,8 @@ et génère des alertes automatisées selon la sévérité épidémique observé
 
 ```bash
 # Cloner 
-https://github.com/Ousow/Apache-Airflow/ars-epidemio/
+https://github.com/Ousow/Apache-Airflow/tree/master/ars-epidemio/ars-epidemio
+cd ars-epidemio/
 
 # Créer le fichier d'environnement
 echo "AIRFLOW_UID=$(id -u)" > .env
