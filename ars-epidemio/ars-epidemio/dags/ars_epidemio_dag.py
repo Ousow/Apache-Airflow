@@ -77,7 +77,7 @@ def collecter_donnees_ias(**context) -> str:
     for syndrome, url in DATASETS_IAS.items():
         rows_all = telecharger_csv_ias(url)
         rows_sem = filtrer_semaine(rows_all, semaine)
-
+        
         logger.info(f"{syndrome} — total={len(rows_all)} | semaine={len(rows_sem)}")
 
         resultats[syndrome] = agreger_semaine(rows_sem, syndrome, semaine)

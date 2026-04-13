@@ -133,12 +133,21 @@ def agreger_semaine(rows: List[dict], syndrome: str, semaine: str) -> dict:
         for v in [val_lr, val_mp]:
             if v not in (None, "", "NA"):
                 try:
-                    vals_occ.append(float(v))
+                    try:
+                        v = str(v).replace(",", ".").strip()
+                        vals_occ.append(float(v))
+                    except:
+                        continue
                 except ValueError:
                     print("DEBUG:", val_lr, val_mp)
                     pass
+        
+        logger.info(f"vals_occ = {vals_occ}")
+        
         if vals_occ:
             valeurs_ias.append(sum(vals_occ) / len(vals_occ))
+        
+        logger.info(f"Colonnes disponibles: {rows[0].keys()}")
 
         # Seuils épidémiques du dataset
         for field, dest in [("MIN_Saison", min_saison_vals), ("MAX_Saison", max_saison_vals)]:
